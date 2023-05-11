@@ -1,0 +1,14 @@
+def solution(N):
+    # Implement your solution here
+    str = bin(N).replace("0b","")
+    str =str.rstrip('0')
+    list = str.split('1')
+    max_gap = 0
+
+    for i in range(len(list)):
+        if len(list[i]) > max_gap:
+            max_gap = len(list[i])
+
+    return (max_gap) 
+
+    pass
